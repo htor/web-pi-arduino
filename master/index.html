@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>rpi</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <header><h1>rpi</h1></header>
+        <section>
+            <form id="arduino-command-form" action="#" method="post">
+                <input id="command-input" type="text" name="command">
+                <input type="submit" value="run arduino command">
+            </form>
+        </section>
+        <section>
+            <form id="pi-command-form" action="#" method="post">
+                <input id="command-input" type="text" name="command">
+                <input type="submit" value="run pi command (and see the output)">
+            </form>
+        </section>
+        <section>
+            <pre id="command-output"></pre>
+        </section>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
